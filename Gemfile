@@ -49,4 +49,8 @@ gem 'simple_form'
 
 gem 'devise', '>= 3.2.4'
 
-gem 'factory_girl_rails', '~> 4.0'
+group :test, :development do 
+    gem 'factory_girl_rails', '~> 4.0'
+
+    gem 'pry'
+end

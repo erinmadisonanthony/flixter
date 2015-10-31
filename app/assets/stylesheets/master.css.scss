@@ -1,15 +1,15 @@
 .navbar {
-    border-radius: 0;
-    font-family: "Helvetica Neue", Helvetica;
-    font-weight: 200;
-    box-shadow: 0px 1px 3px #2a2a2a;
-    background: url('gray_sand.png');
+  border-radius: 0;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 200;
+  box-shadow: 0px 1px 3px #2a2a2a;
+  background: url('gray_sand.png');
 }
 
 .navbar-inverse a.navbar-brand {
-    font-family: "Helvetica Neue", Helvetica;
-    font-weight: 100;
-    color: white;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  color: white;
 }
 
 .hero {
@@ -45,18 +45,18 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .btn-success {
-    color: #000000;
-    background-color: #deb887;
-    border: #ffffff;
+  color: #000000;
+  background-color: #deb887;
+  border: #ffffff;
 }
 
 .btn {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 body {
-    background: url('exclusive_paper.png');
-     font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  background: url('exclusive_paper.png');
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
 .booyah-box {
@@ -73,10 +73,17 @@ body {
 }
 
 .booyah-box h2, .booyah-box h1 {
-    margin: 10px;
+  margin: 10px;
 }
 
 .clr {
-    clear: both;
+  clear: both;
 }
 
+.field_with_errors {
+  color: #FF3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding: 8px;
+  margin: 10px;
+}
