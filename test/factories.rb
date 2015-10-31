@@ -7,7 +7,7 @@ FactoryGirl.define do
     end
 end
 
-FactoryGirl.define do
+FactoryGirl.define do  
     factory :user do
         sequence :email do |n|
             "fruitygirl#{n}@gmail.com"
@@ -16,3 +16,11 @@ FactoryGirl.define do
         password_confirmation "orange4cantaloupe"
     end
 end
+
+FactoryGirl.define do
+    factory :section do 
+        title "Introduction"
+        association :course 
+    end
+end
+
