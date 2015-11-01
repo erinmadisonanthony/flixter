@@ -17,4 +17,14 @@ class Instructor::CoursesControllerTest < ActionController::TestCase
         assert_equal 1, user.courses.count 
     end
 
+    test "course show page found" do
+        user = FactoryGirl.create(:user)
+        sign_in user
+
+        course = FactoryGirl.create(:course, :user => user)
+
+        get :show, :id => course.id
+        assert_response :success
+    end
+
 end
