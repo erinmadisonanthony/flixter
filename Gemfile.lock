@@ -158,7 +158,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass (~> 3.3.5.1)
+  bootstrap-sass (= 3.3.5.1)
   carrierwave
   carrierwave-aws
   coffee-rails (~> 4.0.0)
