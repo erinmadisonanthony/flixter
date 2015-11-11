@@ -1,4 +1,7 @@
-FactoryGirl.define do 
+FactoryGirl.define do  factory :enrollment do
+    
+  end
+ 
     factory :course do
         title "Monkeys Like Bananas"
         description "Learn how to find good bananas."
@@ -7,7 +10,10 @@ FactoryGirl.define do
     end
 end
 
-FactoryGirl.define do 
+FactoryGirl.define do  factory :enrollment do
+    
+  end
+ 
     factory :user do
         sequence :email do |n|
             "fruitygirl#{n}@gmail.com"
@@ -17,14 +23,20 @@ FactoryGirl.define do
     end
 end
 
-FactoryGirl.define do  
+FactoryGirl.define do  factory :enrollment do
+    
+  end
+  
     factory :section do 
         title "Introduction"
         association :course 
     end
 end
 
-FactoryGirl.define do
+FactoryGirl.define do  factory :enrollment do
+    
+  end
+
     factory :lesson do
         title "Bananas grow on trees"
         subtitle "Effective monkeys can climb trees"
