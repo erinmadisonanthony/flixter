@@ -62,6 +62,8 @@ gem 'mini_magick', '~> 4.3.1'
 
 gem 'stripe'
 
+gem 'ranked-model'
+
 group :test, :development do
     gem 'factory_girl_rails', '~> 4.0'
 
