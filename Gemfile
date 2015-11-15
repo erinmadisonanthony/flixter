@@ -64,6 +64,8 @@ gem 'stripe'
 
 gem 'ranked-model'
 
+gem 'jquery-ui-rails'
+
 group :test, :development do
     gem 'factory_girl_rails', '~> 4.0'
 
