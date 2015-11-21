@@ -4,6 +4,7 @@
 <head>
 
   <title>Flixter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -40,8 +41,8 @@
               <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
             <% else %>
               <li><%= link_to 'Sign in', new_user_session_path %></li>
-              <li><%= link_to 'Sign up', new_user_registration_path %></li>  
-            <% end %>    
+              <li><%= link_to 'Sign up', new_user_registration_path %></li>
+            <% end %>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -50,9 +51,9 @@
     <% if notice.present? %>
       <p class="alert alert-info"><%= notice %></p>
     <% end %>
-    <% if alert.present? %>  
+    <% if alert.present? %>
       <p class="alert alert-danger"><%= alert %></p>
-    <% end %>  
+    <% end %>
 
     <%= yield %>
   </div>
@@ -61,11 +62,45 @@
 
   <div id="footer">
     <div class="container">
-      <b>Footer Here</b>
-      <br />
-      <%= link_to 'Teach a Course', new_instructor_course_path %>
+      <div class="col-xs-12 col-sm-3">
+        <b>Teachers</b>
+        <br />
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <br />
+        <%= link_to 'My Dashboard', dashboard_path %>
+      </div>
+      <div class="col-xs-12 col-sm-3 subsect">
+        <b>About</b>
+        <br />
+        <%= link_to 'Team', '#' %>
+        <br />
+        <%= link_to 'Careers', '#' %>
+        <br />
+        <%= link_to 'Privacy Policy', '#' %>
+      </div>
+      <div class="col-xs-12 col-sm-3 subsect">
+        <b>Contact</b>
+        <br />
+        Erin Anthony
+        <br />
+        erinmadisonanthony at gmail
+      </div>
+      <div class="col-xs-12 col-sm-3 subsect">
+        <b>Social</b>
+        <br />
+        <br />
+        <%= link_to 'http://github.com/erinmadisonanthony' do %>
+          <%= image_tag 'github_circle_gray.png', :class => 'social-button' %>
+        <% end %>
+        <%= link_to 'http://www.linkedin.com/in/erin-anthony-9865533' do %>
+          <%= image_tag 'linkedin_circle_gray.png', :class => 'social-button' %>
+        <% end %>
+        <%= link_to 'http://twitter.com/anth_e_m' do %>
+          <%= image_tag 'twitter_circle_gray.png', :class => 'social-button' %>
+        <% end %>
+      </div>
     </div>
-  </div>  
+  </div>
 
 </body>
 
