@@ -41,7 +41,7 @@ body {
   text-decoration: none;
 }
 
-$footer-height-mobile: 320px;
+$footer-height-mobile: 300px;
 @media (max-width: 750px) {
   #footer {
     height: $footer-height-mobile;
